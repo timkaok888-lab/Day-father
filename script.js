@@ -26,10 +26,9 @@ photos.forEach((filename, index) => {
   img.alt = "Семейная фотография " + (index + 1);
   img.loading = "lazy";
 
-  caption.textContent = "Наш момент 💙";
 
   img.onerror = () => figure.remove();
 
-  figure.append(img, caption);
+ figure.append(img);
   gallery.appendChild(figure);
 });

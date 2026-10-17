@@ -2,17 +2,19 @@
 const gallery = document.getElementById("gallery");
 
 const photos = [
-  "Photo5.jpg.heic",
-  "photo2.jpg.jpeg",
-  "photo3.jpg.HEIC",
-  "photo4.jpg.HEIC",
-  "photo6.jpg.HEIC",
-  "photo7.jpg.HEIC",
-  "photo8.jpg.heic",
-  "photo9.jpg.heic",
-  "photo11.jpg.HEIC",
-  "photo13.jpg.HEIC",
-  "photo15.jpg.HEIC"
+  "Photo5.jpg",
+  "photo1.jpg",
+  "photo2.jpg",
+  "photo3.jpg",
+  "photo4.jpg",
+  "photo6.jpg",
+  "photo7.jpg",
+  "photo8.jpg",
+  "photo9.jpg",
+  "photo10.jpg",
+  "photo11.jpg",
+  "photo13.jpg",
+  "photo15.jpg"
 ];
 
 photos.forEach((filename, index) => {
@@ -26,11 +28,8 @@ photos.forEach((filename, index) => {
 
   caption.textContent = "Наш момент 💙";
 
-  img.onerror = () => {
-    figure.remove();
-  };
+  img.onerror = () => figure.remove();
 
   figure.append(img, caption);
   gallery.appendChild(figure);
 });
-t
